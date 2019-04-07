@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head lang="en-us">
+
+    <meta charset="utf-8">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="jumbotron" style="color: white; background-color:olivedrab">
+        <h1 class="text-center">Train Schedule</h1>
+        <h2 class="text-center">Chugga Choo Chuu</h2>
+    </div>
+
+    <br>
+
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12"style="color:olivedrab">
+
+            <div class="panel panel-default" style="text-align: center">
+
+                <h3>Arrival Times</h3>
+            </div>
+
+            <div>
+                <div class="container "style="background-color:rgb(243, 243, 243);border-radius: 10px">
+                    <table class="table" id="trainTable" style="color:olivedrab">
+                        <thead>
+
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+
+
+                    </table>
+                </div>
+            </div>
+            <br>
+            <div class="container" style="background-color:rgb(243, 243, 243);border-radius: 10px">
+                <form>
+
+                    <div class="form-group">
+
+
+                        <h4 style="color:olivedrab">Train Name</h4>
+                        <input type="text" class="form-control" id="name" placeholder="Train Name">
+
+                        <h4 style="color:olivedrab">Your Destination</h4>
+                        <input type="text" class="form-control" id="dest" placeholder="Destination">
+
+                        <h4 style="color:olivedrab">First Train Time</h4>
+                        <input type="text" class="form-control" id="firstTime" placeholder="First Train Time(Military Time)">
+
+                        <h4 style="color:olivedrab">Frequency</h4>
+                        <input type="text" class="form-control" id="freq" placeholder="Frequency (mins)">
+                        <br>
+                        <button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit" style="background-color: forestgreen">Submit</button>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../hw-wk7/assets/script.js"></script>
+</body>
+
+</html>
